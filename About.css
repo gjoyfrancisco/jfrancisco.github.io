@@ -1,0 +1,116 @@
+:root {
+    --brown-dark: #4b3621;
+    --gold: #f4cf64;
+    --gold-shadow: #c8a951;
+    --accent-pink: #e4b6c4;
+    --text-light: #fff8dc;
+    --light: #fff8dc21;
+  }
+body {
+    /* I used a background generator from this website https://superdesigner.co/tools/css-backgrounds */
+    background: linear-gradient(45deg, transparent 34%, var(--light) 35%, var(--light) 40%, transparent 41%, transparent 59%, var(--light) 60%, var(--light) 65%, transparent 66%),
+                linear-gradient(135deg, transparent 34%, var(--light) 35%, var(--light) 40%, transparent 41%, transparent 59%, var(--light) 60%, var(--light) 65%, transparent 66%);
+    background-size: 3em 3em;
+    background-color: var(--brown-dark);
+    color: var(--gold);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; 
+}
+
+
+header {
+    background-color: var(--brown-dark);
+    color: var(--gold-shadow);
+    padding: 10px;
+    text-align: center;
+}
+
+  /* Nav bar */
+  nav {
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  nav img.about,
+  nav img.hcs,
+  nav img.ccs,
+  nav img.email {
+    width: 100px;
+    transition: transform 0.3s ease;
+  }
+    
+  nav img:hover {
+    transform: scale(1.1);
+  }  
+
+
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    background: var(--brown-dark);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}        
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section img.pix {
+    float: left;
+    margin-right: 15px;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: var(--brown-dark);
+    color: var(--gold);
+}
+
+table img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+table img:hover{
+    transform: translateY(-5px)
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--brown-dark);
+    color: var(--text-light);
+    border-radius: 0 0 8px 8px;
+}

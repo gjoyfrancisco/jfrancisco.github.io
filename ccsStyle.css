@@ -1,0 +1,124 @@
+:root {
+    --brown-dark: #4b3621;
+    --gold: #f4cf64;
+    --gold-shadow: #c8a951;
+    --accent-pink: #e4b6c4;
+    --text-light: #fff8dc;
+    --light: #fff8dc21;
+  }
+
+body {
+    background: linear-gradient(45deg, transparent 34%, var(--light) 35%, var(--light) 40%, transparent 41%, transparent 59%, var(--light) 60%, var(--light) 65%, transparent 66%),
+                linear-gradient(135deg, transparent 34%, var(--light) 35%, var(--light) 40%, transparent 41%, transparent 59%, var(--light) 60%, var(--light) 65%, transparent 66%);
+    background-size: 3em 3em;
+    font-family: Arial, sans-serif;
+    background-color: var(--brown-dark); 
+    color: var(--gold);
+    margin: 0;
+    padding: 0;
+
+  }
+  /* Nav bar */
+  nav {
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  nav img.about,
+  nav img.hcs,
+  nav img.ccs,
+  nav img.email {
+    width: 100px;
+    transition: transform 0.3s ease;
+  }
+    
+  nav img:hover {
+    transform: scale(1.1);
+  }  
+  header {
+    background-color: var(--brown-dark); 
+    color: var(--text-light);
+    text-align: center;
+    padding: 10px 10px;
+  }
+  
+  header h1 {
+    font-family: 'Cursive', serif;
+    margin: 0;
+    font-size: 3em;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    font-size: 1.5em;
+  }
+
+  
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #333;
+}
+
+
+.hover-button {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hover-button:hover {
+  background-color: #f0e68c;
+  color: #333;
+}
+ 
+  .cheat-section {
+    background-color: var(--brown-dark);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .cheat-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cheat-section pre {
+    display: none;
+    background-color: var(--gold-shadow);
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin-top: 10px;
+  }
+  
+  .cheat-section.active pre {
+    display: block;
+  }
+
+
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: var(--brown-dark);
+    color: var(--light);
+  }
+  
